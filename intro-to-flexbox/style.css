@@ -25,7 +25,19 @@ h3 {
 /* --- Groups & Items --- */
 
 .group {
+  display: flex;
+  flex-direction: row;
+  border: red 10px solid;
 }
 
 .item {
+  flex: 1; /* means that each item in .group should have the same width (be same size) regardless */
+  margin: 10px;
+  border: blue 2px solid; 
+}
+
+.item-double{
+  flex: 2;
+  /*margin: 10px;
+  border: blue 2px solid; */
 }
